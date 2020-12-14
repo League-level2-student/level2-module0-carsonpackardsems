@@ -24,13 +24,6 @@ for(int is = 0; is < 5; is++) {
 	Random r = new Random();
 	int ran = r.nextInt(100);
 	robot[is].move(ran);
-	if(robot[is].getY() <= 20) {
-		robot[is].setY(20);
-		robot[is].turn(90);
-	}
-	if(robot[is].getX() <= 500) {
-		//set X and turn 90 degrees
-	}
 	if(robot[is].getY() == 0 ) {
 		if(robot[is].getX() == 0) {
 			raceOver = true;
